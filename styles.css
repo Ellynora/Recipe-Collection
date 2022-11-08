@@ -111,6 +111,8 @@
  
   .navbar input:checked ~ .nav-list {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
