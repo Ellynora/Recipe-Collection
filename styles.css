@@ -1,8 +1,116 @@
+/* ................NAVBAR.............. */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5% 0 1.5% 0;
+  background-color: #ffff;
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15%;
+  margin-top: 0.92%;
+  padding-right: 5%;
+}
+.logo img {
+  margin-left: 15%;
+}
+.nav-list a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: #272142;
+  text-align: center;
+}
+.nav-list a:hover {
+  color: #662EED;
+}
+.navbar label, #hamburger {
+  display: none;
+}
 
+/* .................MAIN............. */
 .wrapper {
-  position: relative;
+  position: absolute;
   min-height: 100%;
 }
+.main {
+  margin-top: 5%;
+}
+.header {
+  position: relative;
+  width: 1440px;
+  height: 265px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%), url(/src/overlay.jpg);}
+.header h1 {
+  position: absolute;
+  white-space: pre-line;
+  font-size: 72px;
+  text-align: center;
+  line-height: 77px;
+  color: #ffff;
+  width: 571px;
+  height: 127px;
+  left: calc(50% - 571px/2 - 7.5px);
+}
+.header p {
+  position: absolute;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  width: 560px;
+  left: calc(50% - 560px/2 - 1px);
+  color: #ffff;
+  margin-top: 12%;
+}
+/* ................FOOTER........ */
 .footer {
   position: absolute;
+}
+/* ..............@MEDIA.................. */
+@media (max-width: 767px) {
+
+  .nav-list {
+    display: block;
+    transition: 1.2s ease-in-out;
+  }
+  .logo img {
+    width: 60%;
+    margin-left: 3%;
+  }
+  .nav-list a {
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+  }
+  .nav-list a:hover {
+    color: #662EED;
+    transition: 0.3s ease-in-out;
+    margin-top: 5px;
+  }
+  .navbar label {
+    position: absolute;
+    display: flex;
+    color: #272142;
+    font-size: 2.2em;
+    /* padding-left: 5%; */
+    margin-top: 20px;
+    transition: 1.2s ease-in-out;
+    cursor: pointer;
+  }
+  .navbar label:hover {
+    transition: 1.2s ease-in-out;
+    color: #662EED;
+  }
+  .nav-list {
+    display: none;
+  }
+ 
+  .navbar input:checked ~ .nav-list {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
