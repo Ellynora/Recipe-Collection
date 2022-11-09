@@ -42,30 +42,47 @@
   margin-top: 5%;
 }
 .header {
-  position: relative;
   width: 1440px;
   height: 265px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%), url(/src/overlay.jpg);}
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%), url(/src/overlay.jpg);
+}
 .header h1 {
-  position: absolute;
+  display: block;
+  margin: 0 auto;
   white-space: pre-line;
   font-size: 72px;
   text-align: center;
   line-height: 77px;
   color: #ffff;
-  width: 571px;
+  /* width: 571px; */
   height: 127px;
-  left: calc(50% - 571px/2 - 7.5px);
 }
 .header p {
-  position: absolute;
+  display: block;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 35px;
   text-align: center;
   width: 560px;
-  left: calc(50% - 560px/2 - 1px);
   color: #ffff;
-  margin-top: 12%;
+}
+.recipe-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 5%;
+}
+.recipe-flex img {
+  margin-bottom: 2%;
+}
+.recipe-flex p {
+  margin-bottom: 2%;
+  width: 560px;
+  height: 38px;
+  font-size: 28px;
+  line-height: 38px;
+  color: #272142;
 }
 /* ................FOOTER........ */
 .footer {
@@ -73,7 +90,7 @@
 }
 /* ..............@MEDIA.................. */
 @media (max-width: 767px) {
-
+/* ................NAVBAR........... */
   .nav-list {
     display: block;
     transition: 1.2s ease-in-out;
@@ -97,6 +114,7 @@
     display: flex;
     color: #272142;
     background-color: #ffff;
+    margin-left: 1%;
     font-size: 1.6em;
     transition: 1.2s ease-in-out;
     cursor: pointer;
@@ -113,5 +131,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+  }
+  /* .................MAIN.............. */
+  .recipe-flex {
+    display: block;
   }
 }
