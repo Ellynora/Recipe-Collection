@@ -1,8 +1,7 @@
 /* ................NAVBAR.............. */
 .navbar {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   box-sizing: content-box;
   width: 100%;
   padding: 1.5% 0 1.5% 0;
@@ -12,13 +11,14 @@
 .nav-list {
   display: flex;
   justify-content: flex-end;
-  gap: 15%;
-  margin-top: 0.92%;
-  padding-right: 5%;
+  gap: 5%;
+  margin-right: 4%;
+  margin-top: -1%;
 }
-.logo img {
-  margin-left: 15%;
-}
+.logo {
+  width: 10%;
+  margin: 0% 0% 0% 4%;
+  }
 .nav-list a {
   flex-grow: 1;
   flex-basis: 0;
@@ -42,28 +42,25 @@
   margin-top: 5%;
 }
 .header {
-  width: 1440px;
+  display: inline-grid;
+  flex-direction: row;
+  background-image: url(/src/overlay.jpg);
   height: 265px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%), url(/src/overlay.jpg);
+  width: 1440px;
 }
 .header h1 {
-  display: block;
-  margin: 0 auto;
   white-space: pre-line;
-  font-size: 72px;
   text-align: center;
+  font-size: 72px;
   line-height: 77px;
   color: #ffff;
-  /* width: 571px; */
   height: 127px;
 }
 .header p {
-  display: block;
-  margin: 0 auto;
+  text-align: center;
+  white-space: pre-line;
   font-size: 24px;
   line-height: 35px;
-  text-align: center;
-  width: 560px;
   color: #ffff;
 }
 .recipe-flex {
@@ -87,6 +84,26 @@
 /* ................FOOTER........ */
 .footer {
   position: absolute;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #F9F7FE;
+  padding: 30px;
+}
+.logo-footer {
+  width: 50%;
+  margin-top: -1.9%;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.footer a {
+  color: #272142;
+}
+.footer a:hover {
+  color: #662EED;
 }
 /* ..............@MEDIA.................. */
 @media (max-width: 767px) {
@@ -96,13 +113,15 @@
     transition: 1.2s ease-in-out;
   }
   .logo img {
-    width: 70%;
-    margin-left: 30%;
+    width: 20%;
+    margin-left: 10%;
   }
   .nav-list a {
-    display: block;
-    width: 100%;
-    box-sizing: content-box;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    border-bottom: 1px solid #662EED;
+    max-width: 400px;
   }
   .nav-list a:hover {
     color: #662EED;
@@ -115,6 +134,7 @@
     color: #272142;
     background-color: #ffff;
     margin-left: 1%;
+    margin-top: -4%;
     font-size: 1.6em;
     transition: 1.2s ease-in-out;
     cursor: pointer;
@@ -127,13 +147,43 @@
     display: none;
   }
   .navbar input:checked ~ .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 5px;
   }
   /* .................MAIN.............. */
   .recipe-flex {
     display: block;
+  }
+  .recipe-flex img {
+    width: 60%;
+  }
+  .recipe-flex p {
+    font-size: 18px;
+  }
+  .header {
+    width: 440px;
+  }
+  .header h1 {
+    margin-top: 8%;
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .header p {
+    font-size: 16px;
+  }
+  /* ..............FOOTER.......... */
+  
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logo-footer {
+    width: 60%;
+  }
+  .display-none {
+    display: none;
   }
 }

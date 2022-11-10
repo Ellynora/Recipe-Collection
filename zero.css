@@ -23,9 +23,9 @@ nav, footer, header, aside {
     display: block;
 }
 html, body {
+	box-sizing: content-box;
 	height: 100%;
 	width: 100%;
-	font-size: 100%;
 	font-family: 'Nutino', sans-serif;
 	font-weight: 700;
 	line-height: 1;
