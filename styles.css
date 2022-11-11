@@ -1,3 +1,27 @@
+/* .............GENERAL.............. */
+*, 
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+html, body {
+  box-sizing: content-box;
+  width: 100%;
+  font-family: 'Nutino', sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	font-size: 14px;
+	overflow-x: hidden;
+}
 /* ................NAVBAR.............. */
 .navbar {
   position: fixed;
@@ -35,8 +59,15 @@
 
 /* .................MAIN............. */
 .wrapper {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   min-height: 100%;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: content-box;
 }
 .main {
   margin-top: 5%;
@@ -83,21 +114,21 @@
 }
 /* ................FOOTER........ */
 .footer {
-  position: absolute;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -7.5%;
+  padding: 20px;
   background-color: #F9F7FE;
-  padding: 30px;
 }
+
 .logo-footer {
-  width: 50%;
+  width: 80%;
   margin-top: -1.9%;
 }
 .footer ul {
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 55%;
 }
 .footer a {
   color: #272142;
@@ -159,13 +190,13 @@
   }
   .recipe-flex img {
     text-align: center;
-    width: 70%;
+    width: 90%;
   }
   .recipe-flex p {
     font-size: 18px;
   }
   .header {
-    width: 440px;
+    width: 100%;
   }
   .header h1 {
     margin-top: 8%;
@@ -176,12 +207,16 @@
     font-size: 16px;
   }
   /* ..............FOOTER.......... */
-  
   .footer {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .footer ul {
+    gap: 5%;
+  }
   .logo-footer {
-    width: 60%;
+    margin-left: 14%;
+    width: 40%;
   }
   .display-none {
     display: none;
