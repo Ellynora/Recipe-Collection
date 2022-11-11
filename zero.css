@@ -1,5 +1,7 @@
 /*Обнуление*/
-* {
+*, 
+::after,
+::before {
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -20,7 +22,7 @@ a:active {
     outline: none;
 }
 nav, footer, header, aside {
-    display: block;
+  display: block;
 }
 html, body {
 	box-sizing: content-box;

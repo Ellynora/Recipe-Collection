@@ -168,6 +168,7 @@ html, body {
     margin-top: -4%;
     font-size: 1.6em;
     transition: 1.2s ease-in-out;
+    opacity: 0.9;
     cursor: pointer;
   }
   .navbar label:hover {
@@ -183,18 +184,20 @@ html, body {
   justify-content: flex-start;
   flex-grow: 1;
   flex-basis: 0;
-  opacity: 0.9;
   }
   /* .................MAIN.............. */
   .recipe-flex {
     display: block;
+    margin: 15px 5px 0px 5px;
+    padding: 0;
   }
   .recipe-flex img {
     text-align: center;
-    width: 80%;
+    width: 65%;
   }
   .recipe-flex p {
     font-size: 18px;
+    margin-right: 5%;
   }
   .header {
     width: 80%;
@@ -209,11 +212,17 @@ html, body {
   }
   /* ..............FOOTER.......... */
   .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    width: max-content;
+    margin-left: -6%;
   }
   .footer ul {
     gap: 5%;
+  }
+  .footer > a:last-child {
+    font-size: 10px;
+    margin-left: 10%;
   }
   .logo-footer {
     margin-left: 14%;
