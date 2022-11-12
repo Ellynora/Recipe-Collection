@@ -186,6 +186,9 @@ html, body {
   flex-basis: 0;
   }
   /* .................MAIN.............. */
+  body {
+    width: 468px;
+  }
   .recipe-flex {
     display: block;
     margin: 15px 5px 0px 5px;
@@ -214,7 +217,8 @@ html, body {
   }
   /* ..............FOOTER.......... */
   .footer {
-    width: 62%;
+    display: flex;
+    justify-content: flex-start;
     margin-left: -6%;
   }
   .footer ul {
