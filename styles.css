@@ -56,7 +56,6 @@ html, body {
 .navbar label, #hamburger {
   display: none;
 }
-
 /* .................MAIN............. */
 .wrapper {
   display: flex;
@@ -65,7 +64,7 @@ html, body {
   min-height: 100%;
 }
 .container {
-  max-width: 1440px;
+  display: block;
   margin: 0 auto;
   box-sizing: content-box;
 }
@@ -115,20 +114,17 @@ html, body {
 /* ................FOOTER........ */
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  margin-left: -7.5%;
-  padding: 20px;
-  background-color: #F9F7FE;
-}
-
-.logo-footer {
-  width: 80%;
-  margin-top: -1.9%;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 3%;
+  background: #F9F7FE;;
 }
 .footer ul {
   display: flex;
-  justify-content: center;
-  gap: 55%;
+  gap: 60%;
 }
 .footer a {
   color: #272142;
@@ -136,6 +132,8 @@ html, body {
 .footer a:hover {
   color: #662EED;
 }
+/* ......................ABOUTME PAGE.................. */
+
 /* ..............@MEDIA.................. */
 @media (max-width: 767px) {
 /* ................NAVBAR........... */
@@ -216,20 +214,12 @@ html, body {
     margin-left: -8%;
   }
   /* ..............FOOTER.......... */
-  .footer {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: -6%;
-  }
-  .footer ul {
-    gap: 20%;
-  }
+  
   .footer > a:last-child {
     font-size: 10px;
     margin-left: 10%;
   }
   .logo-footer {
-    margin-left: 14%;
     width: 40%;
   }
   .display-none {
