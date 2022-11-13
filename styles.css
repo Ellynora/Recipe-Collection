@@ -110,6 +110,7 @@ html, body {
 }
 /* ................FOOTER........ */
 .footer {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -232,8 +233,8 @@ html, body {
       margin: 20px 0;
     }
     .recipe-card img {
-      width: 50%;
-      height: 50%;
+      width: 55%;
+      height: 55%;
     }
     .card h2 {
       font-weight: 700;
@@ -331,6 +332,51 @@ html, body {
   }
   .recipe-flex img {
     width: 98%;
+  }
+  /* ..........ABOUT PAGE...... */
+  h1 {
+    font-size: 38px;
+  }
+  .aboutme {
+    display: grid;
+    justify-items: center;
+  }
+  .aboutme h2 {
+    font-size: 26px;
+  }
+  .aboutme img {
+    width: 90%;
+    height: 90%;
+  }
+  .aboutme-flex p {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: normal;
+    margin-bottom: 10px;
+  }
+  .follow-links {
+    margin-bottom: 10px;
+  }
+  .fav-title {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .fav-recipe {
+    display: grid;
+    justify-items: center;
+  }
+  /* ..............CONTACT PAGE......... */
+  .contact-section {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 10px;
+  }
+  .contact-flex {
+    gap: 10%;
+  }
+  .contact-section img {
+    width: 90%;
+    height: 90%;
   }
   /* ..............FOOTER.......... */
   .footer ul {
