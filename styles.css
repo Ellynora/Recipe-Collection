@@ -9,6 +9,14 @@
 }
 a {
   text-decoration: none;
+  color: #272142;
+}
+h1, 
+h2,
+h3, 
+p,
+li {
+  color: #272142;
 }
 ul, ol, li {
   list-style: none;
@@ -30,6 +38,7 @@ html, body {
   width: 100%;
   padding: 1.5% 0 1.5% 0;
   background-color: #ffff;
+  opacity: 0.98;
   z-index: 100;
 }
 .nav-list {
@@ -47,7 +56,6 @@ html, body {
   flex-grow: 1;
   flex-basis: 0;
   padding: 10px;
-  color: #272142;
   text-align: center;
 }
 .nav-list a:hover {
@@ -118,11 +126,65 @@ html, body {
 .footer a {
   color: #272142;
 }
-.footer a:hover {
+ a:hover {
   color: #662EED;
 }
 /* ......................ABOUTME PAGE.................. */
-
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+  }
+  .aboutme  {
+    display: flex;
+    margin: 3% 5% 5% 5%;
+    gap: 5%;
+  }
+  .aboutme-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  .aboutme h2 {
+    font-size: 64px;
+    line-height: 87px;
+  }
+  .aboutme p {
+    white-space: pre-line;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .follow-links {
+    display: flex;
+    gap: 10%;
+        line-height: 30px;
+  }
+  .follow-span {
+    color: #272142;
+    font-size: 18px;
+  }
+  .fav-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 2.5%;
+  }
+  .fav-recipe {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+  .fav-recipe img,
+  .fav-recipe h3 {
+    margin-bottom: 5%;
+  }
+  .fav-recipe p {
+    white-space: pre-line;
+    font-weight: 400;
+    line-height: 30px;
+  }
 /* ..............@MEDIA.................. */
 @media (max-width: 767px) {
 /* ................NAVBAR........... */
@@ -151,7 +213,7 @@ html, body {
     display: flex;
     color: #272142;
     margin-left: 1%;
-    margin-top: -3.2%;
+    margin-top: -4%;
     font-size: 1.6em;
     transition: 1.2s ease-in-out;
     opacity: 0.9;
