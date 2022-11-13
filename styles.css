@@ -338,7 +338,7 @@ html, body {
     font-size: 38px;
   }
   .aboutme {
-    display: grid;
+    flex-direction: column;
     justify-items: center;
   }
   .aboutme h2 {
@@ -362,17 +362,24 @@ html, body {
     margin-top: 20px;
   }
   .fav-recipe {
-    display: grid;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fav-recipe p {
+  margin-bottom: 25px;
+  border-bottom: 1px dashed #67d5d2;
   }
   /* ..............CONTACT PAGE......... */
   .contact-section {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    margin-bottom: 10px;
   }
   .contact-flex {
-    gap: 10%;
+    margin-top: 15px;
+  }
+  .contact-span {
+    margin: 15px 0;
   }
   .contact-section img {
     width: 90%;
