@@ -150,9 +150,8 @@ html, body {
     position: absolute;
     display: flex;
     color: #272142;
-    background-color: #ffff;
     margin-left: 1%;
-    margin-top: -4%;
+    margin-top: -3.2%;
     font-size: 1.6em;
     transition: 1.2s ease-in-out;
     opacity: 0.9;
@@ -181,7 +180,7 @@ html, body {
   }
   
   .recipe-flex p {
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 5%;
   }
   .header {
@@ -195,14 +194,19 @@ html, body {
   .header p {
     font-size: 18px;
   }
+  .recipe-flex img {
+    width: 98%;
+  }
   /* ..............FOOTER.......... */
-  
+  .footer ul {
+    gap: 40%;
+  }
   .footer > a:last-child {
     font-size: 10px;
     margin-left: 10%;
   }
   .logo-footer {
-    width: 40%;
+    width: 60%;
   }
   .display-none {
     display: none;
