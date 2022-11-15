@@ -55,6 +55,7 @@ body {
   gap: 5%;
   margin-right: 4%;
   margin-top: -1%;
+  opacity: 0.98;
 }
 .logo {
   width: 80%;
@@ -76,7 +77,7 @@ body {
 .container {
   position: relative;
   display: block;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   padding-top: 5%;
   box-sizing: content-box;
   flex: 1;
@@ -113,7 +114,7 @@ body {
   margin: 5%;
 }
 .recipe-flex p {
-  margin: 10px 0;
+  margin: 10px 0px;
   height: 38px;
   font-size: 28px;
   line-height: 38px;
@@ -126,10 +127,9 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
-  padding: 22px;
+  padding: 30px;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 25px;
   bottom: 0;
   background: #F9F7FE;
 }
@@ -260,6 +260,7 @@ body {
     .recipe-card img {
       width: 55%;
       height: 55%;
+      margin-top: 10px;
     }
     .card h2 {
       font-weight: 700;
@@ -299,9 +300,11 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    background-color: #ffff;
     border-bottom: 1px solid #662EED;
+    margin-left: -15px;
     top: 10%;
-    width: 90%;
+    width: 100%;
     z-index: 100;
   }
   .nav-list a:hover {
@@ -348,6 +351,9 @@ body {
     font-size: 48px;
     line-height: 55px;
   }
+  .recipe-card h2 {
+    font-size: 26px;
+  }
   .header p {
     font-size: 18px;
   }
@@ -389,7 +395,7 @@ body {
     align-items: center;
   }
   .fav-recipe p {
-  margin-bottom: 25px;
+  margin-bottom: 17%;
   border-bottom: 1px dashed #67d5d2;
   }
   /* ..............CONTACT PAGE......... */
